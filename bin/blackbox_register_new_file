@@ -64,7 +64,7 @@ fi
 
 echo 'NOTE: "already tracked!" messages are safe to ignore.'
 vcs_add "$BB_FILES" "$encrypted_file"
-vcs_commit "registered in blackbox: ${unencrypted_file}" "${COMMIT_FILES[@]}"
+vcs_commit "chore(blackbox): register ${unencrypted_file}" "${COMMIT_FILES[@]}"
 echo "========== UPDATING VCS: DONE"
 echo "Local repo updated.  Please push when ready."
 echo "    $VCSCMD push"
